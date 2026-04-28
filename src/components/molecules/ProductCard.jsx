@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import useCartStore from "../../store/useCartStore.js";
 
 export default function ProductCard({ product }) {
   const { title, image, price, category, rating, id } = product;
+  const addItem = useCartStore((state) => state.addItem);
   const formattedPrice =
     typeof price === "number" ? `$${price.toFixed(2)}` : "Precio no disponible";
   const ratingValue = rating?.rate ? rating.rate.toFixed(1) : null;
@@ -34,12 +36,35 @@ export default function ProductCard({ product }) {
             </span>
           ) : null}
         </div>
-        <Link
-          to={`/products/${id}`}
-          className="mt-3 inline-flex items-center justify-center rounded-lg border border-tech-border px-3 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
-        >
-          Ver detalles
-        </Link>
+        <div className="mt-3 flex items-center gap-2">
+          <Link
+            to={`/products/${id}`}
+            className="inline-flex flex-1 items-center justify-center rounded-lg border border-tech-border px-3 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
+          >
+            Ver detalles
+          </Link>
+          <button
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-tech-border text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
+            type="button"
+            onClick={() => addItem(product)}
+            aria-label="Agregar al carrito"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M6 6h15l-1.5 8.5a2 2 0 0 1-2 1.5H8a2 2 0 0 1-2-1.6L4 4H2" />
+              <circle cx="9" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+          </button>
+        </div>
       </div>
     </article>
   );
