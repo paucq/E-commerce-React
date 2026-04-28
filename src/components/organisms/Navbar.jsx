@@ -8,8 +8,15 @@ export default function Navbar() {
           E-commerce React
         </Link>
         <div className="flex items-center gap-3">
-          <span className="text-sm text-slate-500">Buscar</span>
-          <div className="h-9 w-40 rounded-md border border-slate-200 bg-slate-50" />
+          <label className="text-sm text-slate-500" htmlFor="search">
+            Buscar
+          </label>
+          <input
+            id="search"
+            className="h-9 w-44 rounded-md border border-slate-200 px-3 text-sm focus:border-blue-500 focus:outline-none"
+            placeholder="Buscar productos"
+            type="search"
+          />
         </div>
       </div>
     </header>
