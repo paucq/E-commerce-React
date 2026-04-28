@@ -11,16 +11,13 @@ export default function Navbar() {
 
   return (
     <header className="border-b border-tech-border bg-tech-surface">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-6 sm:flex-row sm:items-center sm:justify-between">
         <Link
           to="/"
           className="group inline-flex items-center gap-3 font-display text-2xl font-semibold tracking-tight text-tech-ink sm:text-3xl"
         >
           <span className="inline-flex items-center gap-2">
-            <span className="rounded-full bg-tech-ink px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-tech-highlight shadow-glow">
-              Tech Pop
-            </span>
-            <span className="text-tech-primary transition group-hover:text-tech-ink">E</span>-commerce
+            <span className="text-tech-primary transition group-hover:text-tech-ink">E</span>commerce
           </span>
         </Link>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
@@ -45,7 +42,7 @@ export default function Navbar() {
             </span>
             <input
               id="search"
-              className="h-11 w-full rounded-full border border-tech-border/80 bg-tech-surface-soft px-4 pl-11 text-sm text-tech-ink shadow-[0_18px_45px_-30px_rgba(15,23,42,0.6)] transition focus:border-tech-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-tech-primary/20"
+              className="h-12 w-full rounded-full border border-tech-border/80 bg-tech-surface-soft px-4 pl-11 text-sm text-tech-ink shadow-[0_18px_45px_-30px_rgba(15,23,42,0.6)] transition focus:border-tech-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-tech-primary/20"
               placeholder="Buscar productos"
               type="search"
               value={searchQuery}
@@ -55,7 +52,7 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               to="/cart"
-              className="inline-flex h-10 items-center gap-3 rounded-full bg-tech-ink px-4 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
+              className="inline-flex h-11 items-center gap-3 rounded-full bg-tech-ink px-4 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
             >
               <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-white/10">
                 <svg
