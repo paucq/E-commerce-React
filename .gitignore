@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+.env
+.env.*
+Entrega_2_React_Convertido.md
