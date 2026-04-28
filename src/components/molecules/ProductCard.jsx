@@ -8,11 +8,11 @@ export default function ProductCard({ product }) {
   const ratingCount = rating?.count ?? 0;
 
   return (
-    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
-      <div className="flex h-48 items-center justify-center rounded-xl bg-slate-50">
+    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-5">
+      <div className="flex h-40 items-center justify-center rounded-xl bg-slate-50 sm:h-48">
         <img
           alt={title}
-          className="h-40 w-auto object-contain"
+          className="h-32 w-auto object-contain sm:h-40"
           loading="lazy"
           src={image}
         />
@@ -21,11 +21,11 @@ export default function ProductCard({ product }) {
         <span className="text-xs uppercase tracking-wide text-slate-400">
           {category}
         </span>
-        <h3 className="text-base font-semibold text-slate-900 line-clamp-2">
+        <h3 className="text-base font-semibold text-slate-900 line-clamp-2 sm:text-lg">
           {title}
         </h3>
         <div className="mt-auto flex items-center justify-between">
-          <span className="text-lg font-semibold text-slate-900">
+          <span className="text-base font-semibold text-slate-900 sm:text-lg">
             {formattedPrice}
           </span>
           {ratingValue ? (

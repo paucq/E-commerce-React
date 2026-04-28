@@ -15,10 +15,10 @@ export default function Checkout() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
           Checkout
         </p>
-        <h1 className="text-3xl font-semibold text-slate-900">
+        <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
           Confirmá tu compra
         </h1>
-        <p className="text-sm text-slate-600">
+        <p className="text-sm text-slate-600 sm:text-base">
           Revisá tu pedido antes de finalizar.
         </p>
       </div>
@@ -36,33 +36,33 @@ export default function Checkout() {
                 style: "currency",
                 currency: "USD",
               }).format(lineTotal);
-              return (
-                <article
-                  key={item.id}
-                  className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:flex-row sm:items-center"
-                >
-                  <div className="flex h-24 w-24 items-center justify-center rounded-xl bg-slate-50">
-                    <img
-                      alt={item.title}
-                      className="h-16 w-auto object-contain"
-                      loading="lazy"
-                      src={item.image}
-                    />
-                  </div>
-                  <div className="flex-1 space-y-1">
-                    <h2 className="text-sm font-semibold text-slate-900">
-                      {item.title}
-                    </h2>
-                    <p className="text-xs text-slate-500">
-                      {item.quantity} unidad{item.quantity === 1 ? "" : "es"}
-                    </p>
-                  </div>
-                  <div className="text-right text-sm font-semibold text-slate-900">
-                    {formattedLineTotal}
-                  </div>
-                </article>
-              );
-            })
+                return (
+                  <article
+                    key={item.id}
+                    className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:flex-row sm:items-center sm:p-5"
+                  >
+                    <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-slate-50 sm:h-24 sm:w-24">
+                      <img
+                        alt={item.title}
+                        className="h-14 w-auto object-contain sm:h-16"
+                        loading="lazy"
+                        src={item.image}
+                      />
+                    </div>
+                    <div className="flex-1 space-y-1">
+                      <h2 className="text-sm font-semibold text-slate-900 sm:text-base">
+                        {item.title}
+                      </h2>
+                      <p className="text-xs text-slate-500">
+                        {item.quantity} unidad{item.quantity === 1 ? "" : "es"}
+                      </p>
+                    </div>
+                    <div className="text-right text-sm font-semibold text-slate-900 sm:text-base">
+                      {formattedLineTotal}
+                    </div>
+                  </article>
+                );
+              })
           )}
         </div>
 

@@ -46,10 +46,10 @@ export default function Home() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
           Catálogo
         </p>
-        <h1 className="text-3xl font-semibold text-slate-900">
+        <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
           Productos destacados
         </h1>
-        <p className="max-w-2xl text-sm text-slate-600">
+        <p className="max-w-2xl text-sm text-slate-600 sm:text-base">
           Explorá la selección completa desde FakeStore API.
         </p>
       </div>

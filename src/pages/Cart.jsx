@@ -17,10 +17,10 @@ export default function Cart() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
             Carrito
           </p>
-          <h1 className="text-3xl font-semibold text-slate-900">
+          <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
             Tu carrito esta vacio
           </h1>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 sm:text-base">
             Agrega productos para continuar con la compra.
           </p>
         </div>
@@ -36,15 +36,15 @@ export default function Cart() {
 
   return (
     <section className="space-y-8">
-      <div className="flex flex-wrap items-center justify-between gap-4">
+      <div className="flex flex-wrap items-start justify-between gap-4 sm:items-center">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
             Carrito
           </p>
-          <h1 className="text-3xl font-semibold text-slate-900">
+          <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
             Resumen de compra
           </h1>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 sm:text-base">
             {totalItems} producto{totalItems === 1 ? "" : "s"} en tu carrito.
           </p>
         </div>
@@ -68,18 +68,18 @@ export default function Cart() {
             return (
               <article
                 key={item.id}
-                className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:flex-row sm:items-center"
+                className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:flex-row sm:items-center sm:p-5"
               >
-                <div className="flex h-28 w-28 items-center justify-center rounded-xl bg-slate-50">
+                <div className="flex h-24 w-24 items-center justify-center rounded-xl bg-slate-50 sm:h-28 sm:w-28">
                   <img
                     alt={item.title}
-                    className="h-20 w-auto object-contain"
+                    className="h-16 w-auto object-contain sm:h-20"
                     loading="lazy"
                     src={item.image}
                   />
                 </div>
                 <div className="flex flex-1 flex-col gap-2">
-                  <h2 className="text-base font-semibold text-slate-900">
+                  <h2 className="text-base font-semibold text-slate-900 sm:text-lg">
                     {item.title}
                   </h2>
                   <p className="text-sm text-slate-500">
@@ -116,7 +116,7 @@ export default function Cart() {
                     </button>
                   </div>
                 </div>
-                <div className="text-right text-sm font-semibold text-slate-900">
+                <div className="text-right text-sm font-semibold text-slate-900 sm:text-base">
                   {formattedLineTotal}
                 </div>
               </article>
@@ -129,7 +129,7 @@ export default function Cart() {
             <p className="text-sm font-semibold text-slate-900">
               Total estimado
             </p>
-            <p className="text-2xl font-semibold text-slate-900">
+            <p className="text-2xl font-semibold text-slate-900 sm:text-3xl">
               {formattedTotal}
             </p>
             <p className="text-xs text-slate-500">
