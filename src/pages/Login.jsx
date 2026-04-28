@@ -48,7 +48,7 @@ export default function Login() {
             id="email"
             name="email"
             label="Email"
-            placeholder="vos@email.com"
+            placeholder="nombre@email.com"
             type="email"
             value={formValues.email}
             onChange={handleChange}
@@ -79,7 +79,7 @@ export default function Login() {
         </form>
 
         <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-tech-muted">
-          <span>¿No tenés cuenta?</span>
+          <span>¿No tienes una cuenta?</span>
           <Link
             className="rounded-full border border-tech-border px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
             to="/register"
@@ -95,14 +95,14 @@ export default function Login() {
             Urban Store
           </p>
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-            Guardá tu carrito y activá beneficios exclusivos.
+            Guarda tu carrito y activá beneficios exclusivos.
           </h2>
           <p className="text-sm text-slate-200">
-            Volvé cuando quieras y retomá tu compra en dos clics.
+            Vuelve cuando quieras y retomá tu compra en dos clics.
           </p>
         </div>
         <div className="mt-8 rounded-2xl border border-white/15 bg-white/10 p-4 text-sm text-slate-100">
-          ¿Necesitás ayuda? Escribinos a soporte@ecommerce.com
+          ¿Necesitas ayuda? Escribinos a soporte@urbanstore.com
         </div>
       </aside>
     </section>

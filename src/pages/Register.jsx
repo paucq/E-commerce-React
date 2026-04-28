@@ -59,7 +59,7 @@ export default function Register() {
             id="email"
             name="email"
             label="Email"
-            placeholder="vos@email.com"
+            placeholder="nombre@email.com"
             type="email"
             value={formValues.email}
             onChange={handleChange}
@@ -69,7 +69,7 @@ export default function Register() {
             id="password"
             name="password"
             label="Contraseña"
-            placeholder="Elegí una contraseña"
+            placeholder="Elige una contraseña"
             type="password"
             value={formValues.password}
             onChange={handleChange}
@@ -90,7 +90,7 @@ export default function Register() {
         </form>
 
         <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-tech-muted">
-          <span>¿Ya tenés cuenta?</span>
+          <span>¿Ya tienes una cuenta?</span>
           <Link
             className="rounded-full border border-tech-border px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
             to="/login"
