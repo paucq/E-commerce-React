@@ -62,7 +62,7 @@ export default function ProductDetail() {
         <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
           {error}
         </div>
-        <Link className="text-sm font-semibold text-blue-600" to="/">
+        <Link className="text-sm font-semibold text-tech-primary" to="/">
           Volver al catálogo
         </Link>
       </section>
@@ -81,11 +81,11 @@ export default function ProductDetail() {
 
   return (
     <section className="space-y-8">
-      <Link className="text-xs font-semibold uppercase text-slate-500" to="/">
+      <Link className="text-xs font-semibold uppercase text-tech-muted" to="/">
         Volver
       </Link>
       <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
-        <div className="flex items-center justify-center rounded-3xl border border-slate-200 bg-white p-8">
+        <div className="flex items-center justify-center rounded-3xl border border-tech-border bg-tech-surface p-8 shadow-glow">
           <img
             alt={title}
             className="h-72 w-auto object-contain"
@@ -94,32 +94,32 @@ export default function ProductDetail() {
         </div>
         <div className="space-y-6">
           <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
               {category}
             </p>
-            <h1 className="text-3xl font-semibold text-slate-900">{title}</h1>
+            <h1 className="font-display text-3xl font-semibold text-tech-ink">{title}</h1>
           </div>
-          <p className="text-sm leading-relaxed text-slate-600">{description}</p>
+          <p className="text-sm leading-relaxed text-tech-muted">{description}</p>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white">
+            <span className="rounded-full bg-tech-ink px-4 py-2 text-sm font-semibold text-white shadow-glow">
               {formattedPrice}
             </span>
             {ratingValue ? (
-              <span className="text-xs font-medium text-slate-500">
+              <span className="text-xs font-medium text-tech-muted">
                 {ratingValue} ({ratingCount} reseñas)
               </span>
             ) : null}
           </div>
           <div className="flex flex-wrap gap-3">
             <button
-              className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              className="inline-flex items-center justify-center rounded-xl bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
               type="button"
               onClick={() => addItem(product)}
             >
               Agregar al carrito
             </button>
             <Link
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-xl border border-tech-border px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
               to="/"
             >
               Seguir comprando

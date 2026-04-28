@@ -30,15 +30,15 @@ export default function Login() {
 
   return (
     <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-      <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+      <div className="rounded-3xl border border-tech-border bg-tech-surface p-8 shadow-sm">
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
             Acceso
           </p>
-          <h1 className="text-3xl font-semibold text-slate-900">
+          <h1 className="font-display text-3xl font-semibold text-tech-ink">
             Iniciar sesión
           </h1>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-tech-muted">
             Retomá tu compra y guardá tu historial de pedidos.
           </p>
         </div>
@@ -71,35 +71,35 @@ export default function Login() {
           ) : null}
 
           <button
-            className="w-full rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            className="w-full rounded-xl bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
             type="submit"
           >
             Entrar
           </button>
         </form>
 
-        <p className="mt-6 text-sm text-slate-500">
+        <p className="mt-6 text-sm text-tech-muted">
           ¿No tenés cuenta?{" "}
-          <Link className="font-semibold text-slate-900" to="/register">
+          <Link className="font-semibold text-tech-ink" to="/register">
             Registrate
           </Link>
         </p>
       </div>
 
-      <aside className="flex flex-col justify-between rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white">
+      <aside className="flex flex-col justify-between rounded-3xl border border-tech-border bg-tech-ink p-8 text-white shadow-glow">
         <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-highlight">
             Beneficios
           </p>
-          <h2 className="text-2xl font-semibold">
+          <h2 className="font-display text-2xl font-semibold">
             Guardá tu carrito y recibí ofertas exclusivas.
           </h2>
-          <p className="text-sm text-slate-300">
+          <p className="text-sm text-slate-200">
             Iniciá sesión para acceder al checkout y seguir con tu compra en
             cualquier momento.
           </p>
         </div>
-        <div className="mt-8 rounded-2xl bg-white/10 p-4 text-sm text-slate-100">
+        <div className="mt-8 rounded-2xl border border-white/15 bg-white/10 p-4 text-sm text-slate-100">
           ¿Necesitás ayuda? Escribinos en soporte@ecommerce.com
         </div>
       </aside>

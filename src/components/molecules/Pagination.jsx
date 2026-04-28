@@ -15,7 +15,7 @@ export default function Pagination({
       aria-label="Paginacion"
     >
       <button
-        className="h-9 rounded-full border border-slate-200 px-3 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+        className="h-9 rounded-full border border-tech-border px-4 text-sm font-medium text-tech-muted transition hover:border-tech-primary hover:text-tech-ink disabled:cursor-not-allowed disabled:opacity-50"
         type="button"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
@@ -25,10 +25,10 @@ export default function Pagination({
       {pages.map((page) => (
         <button
           key={`page-${page}`}
-          className={`h-9 min-w-[2.25rem] rounded-full border px-3 text-sm font-semibold transition ${
+          className={`h-9 min-w-[2.5rem] rounded-full border px-3 text-sm font-semibold transition ${
             page === currentPage
-              ? "border-slate-900 bg-slate-900 text-white"
-              : "border-slate-200 text-slate-600 hover:border-slate-300 hover:text-slate-900"
+              ? "border-tech-primary bg-tech-primary text-white shadow-glow"
+              : "border-tech-border text-tech-muted hover:border-tech-primary hover:text-tech-ink"
           }`}
           type="button"
           onClick={() => onPageChange(page)}
@@ -38,7 +38,7 @@ export default function Pagination({
         </button>
       ))}
       <button
-        className="h-9 rounded-full border border-slate-200 px-3 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
+        className="h-9 rounded-full border border-tech-border px-4 text-sm font-medium text-tech-muted transition hover:border-tech-primary hover:text-tech-ink disabled:cursor-not-allowed disabled:opacity-50"
         type="button"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}

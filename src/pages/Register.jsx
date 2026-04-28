@@ -31,13 +31,13 @@ export default function Register() {
 
   return (
     <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-      <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+      <div className="rounded-3xl border border-tech-border bg-tech-surface p-8 shadow-sm">
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
             Crear cuenta
           </p>
-          <h1 className="text-3xl font-semibold text-slate-900">Registrate</h1>
-          <p className="text-sm text-slate-600">
+          <h1 className="font-display text-3xl font-semibold text-tech-ink">Registrate</h1>
+          <p className="text-sm text-tech-muted">
             Solo necesitamos algunos datos para continuar.
           </p>
         </div>
@@ -80,32 +80,32 @@ export default function Register() {
           ) : null}
 
           <button
-            className="w-full rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            className="w-full rounded-xl bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
             type="submit"
           >
             Crear cuenta
           </button>
         </form>
 
-        <p className="mt-6 text-sm text-slate-500">
+        <p className="mt-6 text-sm text-tech-muted">
           ¿Ya tenés cuenta?{" "}
-          <Link className="font-semibold text-slate-900" to="/login">
+          <Link className="font-semibold text-tech-ink" to="/login">
             Iniciá sesión
           </Link>
         </p>
       </div>
 
-      <aside className="flex flex-col justify-between rounded-3xl border border-slate-200 bg-slate-100 p-8 text-slate-900">
+      <aside className="flex flex-col justify-between rounded-3xl border border-tech-border bg-tech-surface-soft p-8 text-tech-ink shadow-sm">
         <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
             Checkout seguro
           </p>
-          <h2 className="text-2xl font-semibold">Sumate al club.</h2>
-          <p className="text-sm text-slate-600">
+          <h2 className="font-display text-2xl font-semibold">Sumate al club.</h2>
+          <p className="text-sm text-tech-muted">
             Protegemos tus datos y te damos acceso a novedades y descuentos.
           </p>
         </div>
-        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+        <div className="mt-8 rounded-2xl border border-tech-border bg-white p-4 text-sm text-tech-muted">
           Tu información queda guardada solo en este dispositivo.
         </div>
       </aside>

@@ -8,8 +8,8 @@ export default function ProductCard({ product }) {
   const ratingCount = rating?.count ?? 0;
 
   return (
-    <article className="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-5">
-      <div className="flex h-40 items-center justify-center rounded-xl bg-slate-50 sm:h-48">
+    <article className="flex h-full flex-col gap-4 rounded-2xl border border-tech-border bg-tech-surface p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-tech-primary/50 hover:shadow-glow sm:p-5">
+      <div className="flex h-40 items-center justify-center rounded-xl bg-tech-surface-soft sm:h-48">
         <img
           alt={title}
           className="h-32 w-auto object-contain sm:h-40"
@@ -18,25 +18,25 @@ export default function ProductCard({ product }) {
         />
       </div>
       <div className="flex flex-1 flex-col gap-2">
-        <span className="text-xs uppercase tracking-wide text-slate-400">
+        <span className="text-xs uppercase tracking-[0.2em] text-tech-muted">
           {category}
         </span>
-        <h3 className="text-base font-semibold text-slate-900 line-clamp-2 sm:text-lg">
+        <h3 className="font-display text-base font-semibold text-tech-ink line-clamp-2 sm:text-lg">
           {title}
         </h3>
         <div className="mt-auto flex items-center justify-between">
-          <span className="text-base font-semibold text-slate-900 sm:text-lg">
+          <span className="text-base font-semibold text-tech-ink sm:text-lg">
             {formattedPrice}
           </span>
           {ratingValue ? (
-            <span className="text-xs font-medium text-slate-500">
+            <span className="text-xs font-medium text-tech-muted">
               {ratingValue} ({ratingCount})
             </span>
           ) : null}
         </div>
         <Link
           to={`/products/${id}`}
-          className="mt-3 inline-flex items-center justify-center rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+          className="mt-3 inline-flex items-center justify-center rounded-lg border border-tech-border px-3 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
         >
           Ver detalles
         </Link>
