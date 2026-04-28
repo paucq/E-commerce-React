@@ -30,8 +30,8 @@ export default function Register() {
   };
 
   return (
-    <section className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-      <div className="rounded-[2.5rem] border border-tech-border bg-tech-surface p-8 shadow-sm sm:p-10">
+    <section className="grid min-h-[70vh] place-items-center">
+      <div className="w-full max-w-xl rounded-[2.5rem] border border-tech-border bg-tech-surface p-8 shadow-sm sm:p-10">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-tech-muted">
             Crear cuenta
@@ -40,7 +40,7 @@ export default function Register() {
             Registrate
           </h1>
           <p className="text-sm text-tech-muted">
-            Solo necesitamos algunos datos para continuar.
+            Solo necesitamos algunos datos para continuar. Podras ver nuestros descuentos y ofertas especiales.
           </p>
         </div>
 
@@ -99,23 +99,6 @@ export default function Register() {
           </Link>
         </div>
       </div>
-
-      <aside className="flex flex-col justify-between rounded-[2.5rem] border border-tech-border bg-tech-ink p-8 text-white shadow-glow sm:p-10">
-        <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-tech-highlight">
-            Tech Pop
-          </p>
-          <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-            Armá tu perfil en segundos.
-          </h2>
-          <p className="text-sm text-slate-200">
-            Sumate para recibir avisos de stock y propuestas exclusivas.
-          </p>
-        </div>
-        <div className="mt-8 rounded-2xl border border-white/15 bg-white/10 p-4 text-sm text-slate-100">
-          Solo usamos tus datos para mejorar tu experiencia.
-        </div>
-      </aside>
     </section>
   );
 }
