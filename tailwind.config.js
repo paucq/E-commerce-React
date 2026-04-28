@@ -3,6 +3,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      keyframes: {
+        "cart-pop": {
+          "0%": { transform: "scale(1)", boxShadow: "0 0 0 rgba(31, 107, 255, 0)" },
+          "40%": {
+            transform: "scale(0.92)",
+            boxShadow: "0 0 0 6px rgba(31, 107, 255, 0.15)",
+          },
+          "70%": {
+            transform: "scale(1.08)",
+            boxShadow: "0 0 0 10px rgba(31, 107, 255, 0.2)",
+          },
+          "100%": { transform: "scale(1)", boxShadow: "0 0 0 rgba(31, 107, 255, 0)" },
+        },
+      },
+      animation: {
+        "cart-pop": "cart-pop 0.32s ease-out",
+      },
       colors: {
         tech: {
           ink: "var(--tech-ink)",
