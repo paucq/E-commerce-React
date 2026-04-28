@@ -97,7 +97,9 @@ export default function ProductDetail() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
               {category}
             </p>
-            <h1 className="font-display text-3xl font-semibold text-tech-ink">{title}</h1>
+            <h1 className="font-display text-3xl font-semibold tracking-tight text-tech-ink">
+              {title}
+            </h1>
           </div>
           <p className="text-sm leading-relaxed text-tech-muted">{description}</p>
           <div className="flex flex-wrap items-center gap-3">
@@ -112,14 +114,14 @@ export default function ProductDetail() {
           </div>
           <div className="flex flex-wrap gap-3">
             <button
-              className="inline-flex items-center justify-center rounded-xl bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
+              className="inline-flex h-11 items-center justify-center rounded-xl bg-tech-ink px-5 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
               type="button"
               onClick={() => addItem(product)}
             >
               Agregar al carrito
             </button>
             <Link
-              className="inline-flex items-center justify-center rounded-xl border border-tech-border px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
+              className="inline-flex h-11 items-center justify-center rounded-xl border border-tech-border px-5 text-sm font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
               to="/"
             >
               Seguir comprando

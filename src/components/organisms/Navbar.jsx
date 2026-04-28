@@ -16,7 +16,7 @@ export default function Navbar() {
           to="/"
           className="font-display text-xl font-semibold tracking-tight text-tech-ink"
         >
-          <span className="text-tech-primary">E</span>-commerce React
+          <span className="text-tech-primary">E</span>-commerce
         </Link>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
           <div className="flex w-full items-center gap-2 sm:w-auto">
@@ -35,9 +35,9 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               to="/cart"
-              className="inline-flex items-center gap-3 rounded-full bg-tech-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
+              className="inline-flex h-10 items-center gap-3 rounded-full bg-tech-ink px-4 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
             >
-              <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
+              <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-white/10">
                 <svg
                   aria-hidden="true"
                   className="h-4 w-4"
@@ -56,7 +56,6 @@ export default function Navbar() {
                   {totalItems}
                 </span>
               </span>
-              <span>Carrito</span>
             </Link>
             {user ? (
               <button

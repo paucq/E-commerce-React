@@ -46,13 +46,10 @@ export default function Home() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
           Catálogo
         </p>
-        <h1 className="font-display text-3xl font-semibold text-tech-ink sm:text-4xl">
+        <h1 className="font-display text-4xl font-semibold tracking-tight text-tech-ink sm:text-5xl">
           Productos destacados
         </h1>
         <div className="mt-3 flex flex-wrap items-center gap-3">
-          <p className="max-w-2xl text-sm text-tech-muted sm:text-base">
-            Explorá la selección completa desde FakeStore API.
-          </p>
           <span className="rounded-full border border-tech-border bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-primary">
             Tech Pop
           </span>
