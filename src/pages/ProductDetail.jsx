@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import useCartStore from "../store/useCartStore.js";
 import { fetchProductById } from "../services/productService.js";
 
 export default function ProductDetail() {
   const { productId } = useParams();
+  const addItem = useCartStore((state) => state.addItem);
   const [product, setProduct] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -112,6 +114,7 @@ export default function ProductDetail() {
             <button
               className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
               type="button"
+              onClick={() => addItem(product)}
             >
               Agregar al carrito
             </button>
