@@ -38,7 +38,7 @@ export default function ProductCard({ product }) {
           to={`/products/${id}`}
           className="mt-3 inline-flex items-center justify-center rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
         >
-          Ver detalle
+          Ver detalles
         </Link>
       </div>
     </article>

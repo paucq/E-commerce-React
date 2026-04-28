@@ -18,18 +18,18 @@ export default function Cart() {
             Carrito
           </p>
           <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-            Tu carrito esta vacio
+            Tu carrito está vacío
           </h1>
           <p className="text-sm text-slate-600 sm:text-base">
-            Agrega productos para continuar con la compra.
+            Agregá productos para continuar con la compra.
           </p>
         </div>
-        <Link
-          className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
-          to="/"
-        >
-          Volver al catalogo
-        </Link>
+          <Link
+            className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+            to="/"
+          >
+            Volver al catálogo
+          </Link>
       </section>
     );
   }
@@ -133,7 +133,7 @@ export default function Cart() {
               {formattedTotal}
             </p>
             <p className="text-xs text-slate-500">
-              Impuestos y envio calculados al finalizar.
+              Impuestos y envío calculados al finalizar.
             </p>
           </div>
           <button

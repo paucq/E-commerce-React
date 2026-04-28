@@ -8,7 +8,7 @@ export default function ProductList({ products, searchQuery }) {
           No encontramos resultados.
         </p>
         <p className="mt-2 text-sm text-slate-500">
-          Probá con otro termino o revisá la ortografía.
+          Probá con otro término o revisá la ortografía.
         </p>
         {searchQuery ? (
           <p className="mt-4 text-xs text-slate-400">
