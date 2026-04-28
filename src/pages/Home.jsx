@@ -41,17 +41,22 @@ export default function Home() {
   }, [loadProducts]);
 
   return (
-    <section className="space-y-6">
-      <div className="space-y-2">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+    <section className="space-y-8">
+      <div className="rounded-3xl border border-tech-border bg-tech-hero p-6 shadow-glow sm:p-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
           Catálogo
         </p>
-        <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
+        <h1 className="font-display text-3xl font-semibold text-tech-ink sm:text-4xl">
           Productos destacados
         </h1>
-        <p className="max-w-2xl text-sm text-slate-600 sm:text-base">
-          Explorá la selección completa desde FakeStore API.
-        </p>
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <p className="max-w-2xl text-sm text-tech-muted sm:text-base">
+            Explorá la selección completa desde FakeStore API.
+          </p>
+          <span className="rounded-full border border-tech-border bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-primary">
+            Tech Pop
+          </span>
+        </div>
       </div>
 
       {isLoading ? (
@@ -59,7 +64,7 @@ export default function Home() {
           {Array.from({ length: 6 }).map((_, index) => (
             <div
               key={`skeleton-${index}`}
-              className="h-72 animate-pulse rounded-2xl border border-slate-200 bg-white"
+              className="h-72 animate-pulse rounded-2xl border border-tech-border bg-tech-surface"
             />
           ))}
         </div>
