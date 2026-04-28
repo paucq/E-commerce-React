@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import useProductsStore from "../../store/useProductsStore.js";
 
 export default function Navbar() {
+  const { searchQuery, setSearchQuery } = useProductsStore();
+
   return (
     <header className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
@@ -16,6 +19,8 @@ export default function Navbar() {
             className="h-9 w-44 rounded-md border border-slate-200 px-3 text-sm focus:border-blue-500 focus:outline-none"
             placeholder="Buscar productos"
             type="search"
+            value={searchQuery}
+            onChange={(event) => setSearchQuery(event.target.value)}
           />
         </div>
       </div>

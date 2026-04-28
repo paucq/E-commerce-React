@@ -5,6 +5,8 @@ const useProductsStore = create((set) => ({
   products: [],
   isLoading: false,
   error: null,
+  searchQuery: "",
+  setSearchQuery: (searchQuery) => set({ searchQuery }),
   loadProducts: async () => {
     set({ isLoading: true, error: null });
     try {
