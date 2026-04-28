@@ -1,18 +1,19 @@
-# Fullstack Challenge E-commerce
+# 🛍️ Fullstack Challenge E-commerce
 
-**Autor:** Paula Andrea Calderon
+
+👤**Autor:** Paula Andrea Calderon Quintero
 
 Proyecto de e-commerce desarrollado con React, Vite y Tailwind CSS. Incluye catálogo con búsqueda, carrito persistente, checkout simulado y autenticación local.
 
-## Tecnologías y lenguajes
+## 🚀  Tecnologías y lenguajes
 - React + Vite
-- JavaScript (ES6+)
+- JavaScript
 - Tailwind CSS
 - React Router
 - Zustand
 - Axios
 
-## Estructura del proyecto
+## 📂 Estructura del proyecto
 ```text
 src/
 ├── components/
@@ -26,7 +27,7 @@ src/
 └── styles/
 ```
 
-## Funcionalidades
+## ✨ Funcionalidades
 - Catálogo de productos con FakeStore API
 - Búsqueda en tiempo real
 - Paginación de productos
@@ -35,20 +36,5 @@ src/
 - Login/Registro local con localStorage
 - Rutas protegidas
 
-## Scripts
-```bash
-npm install
-npm run dev
-npm run build
-npm run preview
-npm run deploy
-```
-
-## Deploy (GitHub Pages)
-1. Configurar GitHub Pages para publicar desde la rama `gh-pages`.
-2. Ejecutar el deploy:
-```bash
-npm run deploy
-```
-
-Live: https://paucq.github.io/E-commerce-React/
+# 🌐 Deploy
+URL: https://paucq.github.io/E-commerce-React/

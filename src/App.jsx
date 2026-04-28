@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import MainLayout from "./components/templates/MainLayout.jsx";
 import Home from "./pages/Home.jsx";
 import Cart from "./pages/Cart.jsx";
@@ -13,7 +13,7 @@ export default function App() {
   const user = useAuthStore((state) => state.user);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
@@ -28,6 +28,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

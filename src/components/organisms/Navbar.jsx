@@ -17,11 +17,11 @@ export default function Navbar() {
           className="group inline-flex items-center gap-3 font-display text-2xl font-semibold tracking-tight text-tech-ink sm:text-3xl"
         >
           <span className="inline-flex items-center gap-2">
-            <span className="text-tech-primary transition group-hover:text-tech-ink">E</span>commerce
+            <span className="text-tech-primary transition group-hover:text-tech-ink">U</span>rban Store
           </span>
         </Link>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <div className="relative w-full sm:w-72">
+          <div className="relative w-full sm:w-80">
             <label className="sr-only" htmlFor="search">
               Buscar productos
             </label>

@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
           <div className="mt-3 flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-tech-border bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-primary">
-              Tech Pop
+              Urban Store
             </span>
           </div>
         </div>

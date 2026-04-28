@@ -92,7 +92,7 @@ export default function Login() {
       <aside className="flex flex-col justify-between rounded-[2.5rem] border border-tech-border bg-tech-ink p-8 text-white shadow-glow sm:p-10">
         <div className="space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-tech-highlight">
-            Tech Pop
+            Urban Store
           </p>
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
             Guardá tu carrito y activá beneficios exclusivos.

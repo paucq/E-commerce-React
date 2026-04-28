@@ -1,6 +1,7 @@
 {
   "name": "e-commerce-react",
   "private": true,
+  "homepage": "https://paucq.github.io/E-commerce-React/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -20,7 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.19",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "vite": "^5.2.0"
