@@ -41,12 +41,7 @@ export default function Home() {
   }, [loadProducts]);
 
   return (
-    <section className="relative isolate">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 left-1/2 w-screen -translate-x-1/2 bg-tech-hero"
-      />
-      <div className="relative space-y-8">
+    <section className="space-y-8">
         <div className="rounded-3xl border border-tech-border/80 bg-tech-surface/90 p-6 shadow-glow backdrop-blur sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
             Catálogo
@@ -88,7 +83,6 @@ export default function Home() {
             />
           </div>
         ) : null}
-      </div>
     </section>
   );
 }
