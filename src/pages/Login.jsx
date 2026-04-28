@@ -29,17 +29,17 @@ export default function Login() {
   };
 
   return (
-    <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-      <div className="rounded-3xl border border-tech-border bg-tech-surface p-8 shadow-sm">
+    <section className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="rounded-[2.5rem] border border-tech-border bg-tech-surface p-8 shadow-sm sm:p-10">
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted">
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-tech-muted">
             Acceso
           </p>
-          <h1 className="font-display text-3xl font-semibold text-tech-ink">
+          <h1 className="font-display text-3xl font-semibold text-tech-ink sm:text-4xl">
             Iniciar sesión
           </h1>
           <p className="text-sm text-tech-muted">
-            Retomá tu compra y guardá tu historial de pedidos.
+            Retomá tu compra con un acceso rápido y seguro.
           </p>
         </div>
 
@@ -65,42 +65,44 @@ export default function Login() {
           />
 
           {error ? (
-            <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
+            <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
               {error}
             </div>
           ) : null}
 
           <button
-            className="w-full rounded-xl bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
+            className="w-full rounded-full bg-tech-ink px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
             type="submit"
           >
             Entrar
           </button>
         </form>
 
-        <p className="mt-6 text-sm text-tech-muted">
-          ¿No tenés cuenta?{" "}
-          <Link className="font-semibold text-tech-ink" to="/register">
+        <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-tech-muted">
+          <span>¿No tenés cuenta?</span>
+          <Link
+            className="rounded-full border border-tech-border px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-tech-ink transition hover:border-tech-primary hover:text-tech-primary"
+            to="/register"
+          >
             Registrate
           </Link>
-        </p>
+        </div>
       </div>
 
-      <aside className="flex flex-col justify-between rounded-3xl border border-tech-border bg-tech-ink p-8 text-white shadow-glow">
+      <aside className="flex flex-col justify-between rounded-[2.5rem] border border-tech-border bg-tech-ink p-8 text-white shadow-glow sm:p-10">
         <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-highlight">
-            Beneficios
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-tech-highlight">
+            Tech Pop
           </p>
-          <h2 className="font-display text-2xl font-semibold">
-            Guardá tu carrito y recibí ofertas exclusivas.
+          <h2 className="font-display text-2xl font-semibold sm:text-3xl">
+            Guardá tu carrito y activá beneficios exclusivos.
           </h2>
           <p className="text-sm text-slate-200">
-            Iniciá sesión para acceder al checkout y seguir con tu compra en
-            cualquier momento.
+            Volvé cuando quieras y retomá tu compra en dos clics.
           </p>
         </div>
         <div className="mt-8 rounded-2xl border border-white/15 bg-white/10 p-4 text-sm text-slate-100">
-          ¿Necesitás ayuda? Escribinos en soporte@ecommerce.com
+          ¿Necesitás ayuda? Escribinos a soporte@ecommerce.com
         </div>
       </aside>
     </section>

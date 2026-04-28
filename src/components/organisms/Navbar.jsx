@@ -14,18 +14,38 @@ export default function Navbar() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
         <Link
           to="/"
-          className="font-display text-xl font-semibold tracking-tight text-tech-ink"
+          className="group inline-flex items-center gap-3 font-display text-2xl font-semibold tracking-tight text-tech-ink sm:text-3xl"
         >
-          <span className="text-tech-primary">E</span>-commerce
+          <span className="inline-flex items-center gap-2">
+            <span className="rounded-full bg-tech-ink px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-tech-highlight shadow-glow">
+              Tech Pop
+            </span>
+            <span className="text-tech-primary transition group-hover:text-tech-ink">E</span>-commerce
+          </span>
         </Link>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <div className="flex w-full items-center gap-2 sm:w-auto">
-            <label className="text-xs font-semibold uppercase tracking-[0.2em] text-tech-muted" htmlFor="search">
-              Buscar
+          <div className="relative w-full sm:w-72">
+            <label className="sr-only" htmlFor="search">
+              Buscar productos
             </label>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-tech-muted">
+              <svg
+                aria-hidden="true"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-3.5-3.5" />
+              </svg>
+            </span>
             <input
               id="search"
-              className="h-10 w-full rounded-xl border border-tech-border bg-white px-4 text-sm text-tech-ink shadow-sm transition focus:border-tech-primary focus:outline-none focus:ring-2 focus:ring-tech-primary/20 sm:w-64"
+              className="h-11 w-full rounded-full border border-tech-border/80 bg-tech-surface-soft px-4 pl-11 text-sm text-tech-ink shadow-[0_18px_45px_-30px_rgba(15,23,42,0.6)] transition focus:border-tech-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-tech-primary/20"
               placeholder="Buscar productos"
               type="search"
               value={searchQuery}
