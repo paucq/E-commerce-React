@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: light;
+  --tech-ink: #0b1020;
+  --tech-ink-soft: #1b2340;
+  --tech-muted: #5a6787;
+  --tech-border: #d5ddf0;
+  --tech-surface: #ffffff;
+  --tech-surface-soft: #f4f6ff;
+  --tech-surface-glow: #eef3ff;
+  --tech-primary: #1f6bff;
+  --tech-primary-strong: #0b4cff;
+  --tech-accent: #8f5cff;
+  --tech-accent-strong: #6a32ff;
+  --tech-highlight: #17c3ff;
+  --tech-highlight-strong: #00a6ff;
+  --tech-danger: #ff4f7a;
+  --tech-warning: #ffb020;
+  --tech-shadow: 0 20px 50px -35px rgba(31, 107, 255, 0.6);
+}
+
 body {
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  background-color: var(--tech-surface-soft);
+  color: var(--tech-ink);
+}
+
+*::selection {
+  background: rgba(31, 107, 255, 0.2);
+}
+
+.font-display {
+  font-family: "Sora", "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+
+.tech-surface {
+  background: var(--tech-surface);
+  border-color: var(--tech-border);
+}
+
+.tech-surface-soft {
+  background: var(--tech-surface-soft);
+}
+
+.tech-glow {
+  box-shadow: var(--tech-shadow);
+}
+
+.tech-gradient {
+  background: linear-gradient(120deg, #f5f7ff 0%, #eef2ff 35%, #f8fbff 100%);
 }
