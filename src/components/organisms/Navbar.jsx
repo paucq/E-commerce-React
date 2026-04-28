@@ -33,6 +33,31 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-wrap items-center gap-3">
+            <Link
+              to="/cart"
+              className="inline-flex items-center gap-3 rounded-full bg-tech-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
+            >
+              <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
+                <svg
+                  aria-hidden="true"
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6 6h15l-1.5 8.5a2 2 0 0 1-2 1.5H8a2 2 0 0 1-2-1.6L4 4H2" />
+                  <circle cx="9" cy="20" r="1" />
+                  <circle cx="18" cy="20" r="1" />
+                </svg>
+                <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-tech-highlight text-[0.6rem] font-semibold text-tech-ink">
+                  {totalItems}
+                </span>
+              </span>
+              <span>Carrito</span>
+            </Link>
             {user ? (
               <button
                 className="rounded-full border border-tech-border px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-tech-muted transition hover:border-tech-primary hover:text-tech-primary"
@@ -49,15 +74,6 @@ export default function Navbar() {
                 Ingresar
               </Link>
             )}
-            <Link
-              to="/cart"
-              className="relative inline-flex items-center gap-2 rounded-full bg-tech-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-glow transition hover:bg-tech-primary"
-            >
-              Carrito
-              <span className="rounded-full bg-tech-highlight px-2 py-0.5 text-[0.7rem] font-semibold text-tech-ink">
-                {totalItems}
-              </span>
-            </Link>
           </div>
         </div>
       </div>
